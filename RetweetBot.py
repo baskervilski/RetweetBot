@@ -2,7 +2,7 @@
 """
 Created on Fri Oct 16 22:25:07 2015
 
-@author: Nemandza
+@author: Nemanja
 @app name: RetweetBot
 """
 
