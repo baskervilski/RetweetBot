@@ -2,8 +2,8 @@
 """
 Created on Fri Oct 16 22:25:07 2015
 
-@author: Sladjana
-@app name: BaskerBot
+@author: Nemandza
+@app name: RetweetBot
 """
 
 import tweepy
