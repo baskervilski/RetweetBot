@@ -9,11 +9,11 @@ Created on Fri Oct 16 22:25:07 2015
 import tweepy
 import pandas as pd
 
-#enter the corresponding information from your Twitter application:
-CONSUMER_KEY = '' #keep the quotes, replace this with your consumer key
-CONSUMER_SECRET = '' #keep the quotes, replace this with your consumer secret key
-ACCESS_KEY = '' #keep the quotes, replace this with your access token
-ACCESS_SECRET = '' #keep the quotes, replace this with your access token secret
+# enter the corresponding information from your Twitter application:
+CONSUMER_KEY = '' # keep the quotes, replace this with your consumer key
+CONSUMER_SECRET = '' # keep the quotes, replace this with your consumer secret key
+ACCESS_KEY = '' # keep the quotes, replace this with your access token
+ACCESS_SECRET = '' # keep the quotes, replace this with your access token secret
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tweepy.API(auth)
@@ -35,6 +35,7 @@ tw_df = pd.DataFrame({'id': ids,
 idx_rt_max = tw_df['retweeted'].idxmax()
 idx_fav_max = tw_df['faved'].idxmax()
 
+# Find the IDs of the most retweeted and most fav'ed tweet
 most_retweeted_id = tw_df.iloc[idx_rt_max].id
 most_faved_id = tw_df.iloc[idx_fav_max].id
 
